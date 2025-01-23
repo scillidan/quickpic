@@ -54,24 +54,24 @@ export async function GenerateImage(params: {
       </div>
     ),
     // ImageResponse options
-    {
-      // For convenience, we can re-use the exported opengraph-image
-      // size config to also set the ImageResponse's width and height.
-      ...size,
-      fonts: [
-        {
-          name: "Inter",
-          data: await interSemiBold,
-          style: "normal",
-          weight: 600,
-        },
-        {
-          name: "Inter",
-          data: await interLight,
-          style: "normal",
-          weight: 300,
-        },
-      ],
-    },
+    // {
+    //   // For convenience, we can re-use the exported opengraph-image
+    //   // size config to also set the ImageResponse's width and height.
+    //   ...size,
+    //   fonts: [
+    //     {
+    //       name: "Inter",
+    //       data: await interSemiBold,
+    //       style: "normal",
+    //       weight: 600,
+    //     },
+    //     {
+    //       name: "Inter",
+    //       data: await interLight,
+    //       style: "normal",
+    //       weight: 300,
+    //     },
+    //   ],
+    // },
   );
 }
