@@ -12,12 +12,12 @@ export async function GenerateImage(params: {
   description?: string;
 }) {
   // Fonts
-  const interSemiBold = fetch(
-    new URL("../fonts/Inter-SemiBold.ttf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
-  const interLight = fetch(
-    new URL("../fonts/Inter-Light.ttf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+  // const interSemiBold = fetch(
+  //   new URL("../fonts/Inter-SemiBold.ttf", import.meta.url),
+  // ).then((res) => res.arrayBuffer());
+  // const interLight = fetch(
+  //   new URL("../fonts/Inter-Light.ttf", import.meta.url),
+  // ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
     (
